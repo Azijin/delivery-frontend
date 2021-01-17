@@ -1,12 +1,12 @@
-import logo from "./logo.svg";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 import TopBar from "./components/TopBar";
 import Content from "./components/Content";
+import Footer from "./components/Footer";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faStar, faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
-library.add(faStar, faStar, faPlus, faMinus);
+library.add(faStar, faPlus, faMinus);
 
 function App() {
   //Import data
@@ -82,6 +82,7 @@ function App() {
         minusShoppingCart={minusShoppingCart}
         shoppingCart={shoppingCart}
       />
+      <Footer />
     </>
   );
 }
